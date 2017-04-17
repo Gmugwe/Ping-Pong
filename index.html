@@ -12,32 +12,47 @@
     <title>Ping-Pong</title>
   </head>
   <body>
-
-    <div class="header">
-      <h1>Ping-Pong</h1>
-    </div>
-    <div class= "container-fluid">
+    <div class="container-fluid">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><img alt="Brand" src="img/logo.jpg"></a>
+            </div>
+          </div>
+        </nav>
+             <div class="row">
+               <div class="col-md-12 header">Ping-Pong</div>
+             </div>
+           </div>
+    <div class= "content">
       <p>Ping Pong will count up to your number from<br>1 with the following exceptions:</p>
-      <ol>
-        <li>Number divisible by 3 become "png"</li>
-        <li>Numbers divisible by 5 become "pong"</li>
-        <li>Numbers divisible by 3 and 5 become "pingpong"</li>
-      </ol>
+        <ol>
+          <li>Number divisible by 3 become "png"</li>
+          <li>Numbers divisible by 5 become "pong"</li>
+          <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+        </ol>
 
-    </div>
-    <form>
-      <div class="form-group">
-      <label for="number1">Enter your number here:</label>
-      <input id="number1" class="form-control" type="text">
-    </div>
+      </div>
 
+      <div class="row">
+        <div class="col-sm-3">
+          <p><strong>Enter Your Number Here:</strong></p>
+             <ul id="List">
+              </ul>
+            </div>
 
-    <div class= "Sidebar">
-      <button> Close &times;</button>
-      <a class="bar-item button">About Ping Pong</a>
-      <a href="https://github.com/Gmugwe" class="bar-item button">Github username</a>
-      <a href="." class="bar-item button"></a>
-    </div>
+         <div class="col-sm-3">
+            <form class="form-horizontal">
+              <div class="form-group" id="inputForm">
+                  <input id="userInput" type="text" class="form-control">
+               </div>
+             </div>
 
+          <div class="col-sm-6">
+              <button class="submit">Ping Pong</button>
+              </div>
+            </form>
+            <ul id="result"></ul>
+        </div>
   </body>
 </html>
