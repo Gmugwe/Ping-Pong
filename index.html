@@ -1,74 +1,82 @@
 <!DOCTYPE html>
- <html>
+<html>
 
-  <head lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/Styles.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Ping Pong</title>
-  </head>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/Styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Ping Pong</title>
+</head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://github.com/Gmugwe"><img alt="Brand" src="img/logo.jpg"></a>
-        <div class="navbar-header navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">About Ping Pong</a></li>
-            <li><a href="index.html">Created by</a></li>
-            <li><a href="mailto:ggmugwe@gmail.com">Contact Me</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Levels<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Easy</a></li>
-                <li><a href="#">Intermediate</a></li>
-                <li><a href="#">Hard</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Two Player</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Four Players</a></li>
-            </li>
-            </ul>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://github.com/Gmugwe"><img alt="Brand" src="img/logo.jpg"></a>
+      <div class="navbar-header navbar-right">
+        <ul class="nav navbar-nav">
+          <li><a href="README.md">About Ping Pong</a></li>
+          <li><a href="mailto:ggmugwe@gmail.com">Contact Me</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Levels<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Easy</a></li>
+              <li><a href="#">Intermediate</a></li>
+              <li><a href="#">Hard</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Two Player</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Four Players</a></li>
+          </li>
           </ul>
+        </ul>
 
-        </div><!---nav navbar-nav--->
-    </nav><!--end navbar-defult--->
+      </div>
+      <!---nav navbar-nav--->
+  </nav>
+  <!--end navbar-defult--->
+  </div>
+  <!---end of container- fluid--->
 
-    <div class="row">
-      <div class="col-md-12 header">Ping Pong</div>
+
+
+
+  <div class="container-fluid">
+    <h1>Ping Pong</h1>
+    <h3><u>Rules:</u></h3>
+    <p class="content">Ping Pong will count up to your number from 1 with the following exceptions:</p>
+    <ol>
+      <li>Number divisible by 3 become "ping"</li>
+      <li>Numbers divisible by 5 become "pong"</li>
+      <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+    </ol>
+
+
+
+    <form id="game-form">
+      <div class="form-group">
+        <label for="pingpong"><strong>Enter Your Number Here:</strong></label>
+        <input id="pingpong" type="text" class="form-control" placeholder=" Write a digit...">
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <div id="output">
+      <ul id="result"></ul>
     </div>
+    <!---end of output--->
+  </div>
+  <!---end of container fluid--->
 
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 footer">
+        <footer>Copyright &copy; Mugwe Ltd. </footer>
+      </div>
+      <script src="js/jquery-3.2.0.js"></script>
+      <script src="js/Scripts.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
 
-    <div class="container">
-      <h1><u>Rules:</u></h1>
-      <p class="content">Ping Pong will count up to your number from 1 with the following exceptions:</p>
-      <ol>
-        <li>Number divisible by 3 become "ping"</li>
-        <li>Numbers divisible by 5 become "pong"</li>
-        <li>Numbers divisible by 3 and 5 become "pingpong"</li>
-      </ol>
-
-
-
-        <form id="game-form">
-          <div class="form-group">
-            <label for="pingpong"><strong>Enter Your Number Here:</strong></label>
-              <input id="pingpong" type="text" class="form-control" placeholder=" Write a digit...">
-              </div>
-              <button type="submit" class="btn">Submit</button>
-              </form>
-              <div id="output">
-              <ul id="result"></ul>
-              </div>
-          </div><!---end of container--->
-        </div><!---end of container- fluid--->
-
-    <script src="js/jquery-3.2.0.js"></script>
-    <script src="js/Scripts.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-
-  </html>
+</html>
